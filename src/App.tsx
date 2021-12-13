@@ -101,7 +101,7 @@ function Project(){
       <AButton target="_blank" rel="noreferrer" href="https://falanter.gitee.io/yinxiangyun"><button>印象云笔记-Vue2</button></AButton>
       <AButton target="_blank" rel="noreferrer" href="https://falanter.gitee.io/gulu-ui-website-1"><button>样式组件-Vue3</button></AButton>
       <AButton target="_blank" rel="noreferrer" href="https://falanter.gitee.io/react-image-upload"><button>图床-React</button></AButton>
-      <AButton target="_blank" rel="noreferrer" href="https://falanter.gitee.io/morney-1"><button>旺财记账-React</button></AButton>
+      <AButton target="_blank" rel="noreferrer" href="https://falanter.gitee.io/morney-1/build"><button>旺财记账-React</button></AButton>
     </ConList>
   );
 }
