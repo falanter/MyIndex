@@ -53,7 +53,6 @@ const Wrapper=styled.div`
 const Black=styled.div`
    height:50px;
 `;
-
 function Home(){
     return (
         <Con>

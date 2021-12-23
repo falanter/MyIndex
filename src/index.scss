@@ -13,3 +13,30 @@ body{
     line-height: 1.2;
     -webkit-tap-highlight-color:transparent;
 }
+#live2d-widget{
+    z-index: 99;
+    position: fixed;
+    // right: 0;
+    // bottom: 0;
+    // height:600px;
+    // width: 300px;
+}
+#live2dcanvas{
+    height:600px;
+    width: 300px;
+    bottom: -40px !important;
+}
+@media(max-width:700px){
+    #live2dcanvas{
+        height:600px;
+        width: 300px;
+        left: -60px !important;
+    }
+}
+@media(max-width:400px){
+    #live2dcanvas{
+        height:400px;
+        width: 200px;
+        left: -20px !important;
+    }
+}
