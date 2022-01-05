@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import IconsVue from '../assets/Vue.svg'
+import IconsReact from '../assets/React.svg'
 
 const Con=styled.div`
    display:flex;
@@ -248,7 +250,9 @@ function Home(){
                     <Overview>
                         <OverItem>
                             <Circle>
-                                <Icon src="/Vue.svg" alt="vue2" />
+                                <Icon src={IconsVue} alt="vue2" />
+                                {/* <Icon src='../assets/Vue.svg' alt="vue2" /> */}
+                                
                             </Circle>
                             <OverText>
                                 <div>Vue2</div>
@@ -258,7 +262,8 @@ function Home(){
                         </OverItem>
                         <OverItem>
                             <Circle>
-                                <Icon src="/Vue.svg" alt="vue2" />
+                                {/* <Icon src="/public/Vue.svg" alt="vue2" /> */}
+                                <Icon src={IconsVue} alt="vue2" />
                             </Circle>
                             <OverText>
                                 <div>Vue3</div>
@@ -268,7 +273,8 @@ function Home(){
                         </OverItem>
                         <OverItem>
                             <Circle>
-                                <Icon src="/React.svg" alt="vue2" />
+                                {/* <Icon src="/public/React.svg" alt="vue2" /> */}
+                                <Icon src={IconsReact} alt="vue2" />
                             </Circle>
                             <OverText>
                                 <div>React</div>
