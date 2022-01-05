@@ -12,11 +12,12 @@ body{
     font-size: 16px;
     line-height: 1.2;
     -webkit-tap-highlight-color:transparent;
+    
 }
 #live2d-widget{
     z-index: 99;
     position: fixed;
-    // right: 0;
+    // left: 40px;
     // bottom: 0;
     // height:600px;
     // width: 300px;
@@ -25,13 +26,17 @@ body{
     height:600px;
     width: 300px;
     bottom: -40px !important;
+    left: -20px !important;
 }
-@media(max-width:700px){
+@media(max-width:950px){
     #live2dcanvas{
-        height:600px;
-        width: 300px;
-        left: -60px !important;
+        // height:600px;
+        // width: 300px;
+        left: -30px !important;
     }
+    // #live2d-widget{
+    //     left: 20px;
+    // }
 }
 @media(max-width:400px){
     #live2dcanvas{

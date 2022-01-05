@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const Con=styled.div`
+const PCon=styled.div`
    display:flex;
    flex-direction: column;
 `;
-const Wrapper=styled.div`
+const PWrapper=styled.div`
     padding:20px;
     background-image: linear-gradient(to top right, #D9E5F3, #eff);
     border-top-right-radius:20px;
@@ -36,18 +36,18 @@ const AButton=styled.a`
 
 function Project(){
     return (
-        <Con>
+        <PCon>
             <Black/>
-            <Wrapper>
+            <PWrapper>
                 <h2>Project</h2>
                 <AButton target="_blank" rel="noreferrer" href="https://falanter.gitee.io/blog"><button>多人博客-Vue2</button></AButton>
                 <AButton target="_blank" rel="noreferrer" href="https://falanter.gitee.io/yinxiangyun"><button>印象云笔记-Vue2</button></AButton>
                 <AButton target="_blank" rel="noreferrer" href="https://falanter.gitee.io/gulu-ui-website-1"><button>样式组件-Vue3</button></AButton>
                 <AButton target="_blank" rel="noreferrer" href="https://falanter.gitee.io/react-image-upload"><button>图床-React</button></AButton>
                 <AButton target="_blank" rel="noreferrer" href="https://falanter.gitee.io/morney-1/build"><button>旺财记账-React</button></AButton>
-            </Wrapper>
+            </PWrapper>
             <Black/>
-        </Con>
+        </PCon>
     );
   }
 export default Project;

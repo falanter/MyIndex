@@ -5,7 +5,7 @@ const NavWrapper=styled.nav`
   /* border: 1px solid blue; */
   z-index:5;
   padding-top:20px;
-  box-shadow: 0 0 50px rgba(0,0,0,0.25);
+  box-shadow: 20px 0 50px rgba(0,0,0,0.25);
   line-height: 24px;
   /* margin-right: 20px; */
   background-image: linear-gradient(to top right, #D9E5F3, #eff);
