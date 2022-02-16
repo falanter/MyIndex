@@ -48,11 +48,11 @@ const Nav = () => {
                         about
                     </CustomLink>
                 </li>
-                <li>
+                {/* <li>
                     <CustomLink to="/user">
                         user
                     </CustomLink>
-                </li>
+                </li> */}
                 <li>
                     <CustomLink to="/project">
                         project
