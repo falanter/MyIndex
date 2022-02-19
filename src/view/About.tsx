@@ -29,7 +29,7 @@ function About(){
             <Wrapper>
                 <Title>About</Title>
                 <Main>
-                    展示了个人项目，同时适配了平板和移动端。
+                    本项目使用React框架和TypeScript语言。展示了个人项目，同时适配了平板和移动端。
                 </Main>
             </Wrapper>
             <Black/>
