@@ -6,14 +6,10 @@ const Con=styled.div`
    display:flex;
    flex-direction: column;
    width:80%;
-   /* height:700px; */
-   
 `;
 const Wrapper=styled.div`
     padding:20px;
-    /* background-color:#333; */
     background-image: linear-gradient(to top right, #D9E5F3, #eff);
-    /* background-image: linear-gradient(to top right, #D9E5F3, #D9E5F3); */
     border-top-right-radius:20px;
     border-bottom-right-radius:20px;
     box-shadow: 0 0 50px rgba(0,0,0,0.25);
@@ -22,7 +18,6 @@ const Wrapper=styled.div`
     }
 `;
 const Top=styled.div`
-    /* height:70px; */
     height:10%;
     display:flex;
     div{
@@ -41,9 +36,7 @@ const Top=styled.div`
     }
 `;
 const Main=styled.div`
-   /* height:600px; */
    height:90%;
-   /* background:#ccc; */
    display:flex;
    flex-direction: column;
 `;
@@ -91,7 +84,6 @@ const OverText=styled.div`
     display:flex;
     flex-direction:column;
     padding-top:10px;
-    /* margin-right:auto; */
 `;
 const Diagram=styled.div`
     height:350px;
@@ -103,7 +95,6 @@ const Diagram=styled.div`
     align-items: flex-end;
     justify-content: space-around;
     @media(max-width:800px){
-        /* height:100%; */
         flex-direction: column;
         align-items: flex-start;
     }
@@ -116,8 +107,6 @@ const TreeBox=styled.a`
     width:150px;
     align-items: center;
     padding-bottom:20px;
-    /* border:1px solid #fff; */
-    /* justify-content: space-around; */
     cursor: pointer;
     &:nth-child(1) div{
         width:50px;
@@ -145,7 +134,6 @@ const TreeBox=styled.a`
         }
     }
     @media(max-width:800px){
-        /* height:30px; */
         width:100%;
         padding-bottom:0;
         flex-direction:row;
@@ -186,23 +174,6 @@ const Tree=styled.div`
         height:50px;
     }
 `;
-// const Bottom=styled.div`
-//    /* height:100px; */
-//    height:10%;
-//    /* background:#fff; */
-//     display:flex;
-//     align-items: center;
-//     justify-content: space-around;
-// `;
-// const BottomItem=styled.div`
-//     background:#EDF4FC;
-//     box-shadow:inset 2px 2px 5px rgba(0,0,0,0.25);
-//     border-radius:12px;
-//     margin:0 5px;
-//     display:flex;
-//     align-items: center;
-//     justify-content: space-around;
-// `;
 const PWrapper=styled.div`
     display:none;
     padding:20px;
@@ -250,9 +221,7 @@ function Home(){
                     <Overview>
                         <OverItem>
                             <Circle>
-                                <Icon src={IconsVue} alt="vue2" />
-                                {/* <Icon src='../assets/Vue.svg' alt="vue2" /> */}
-                                
+                                <Icon src={IconsVue} alt="vue2" />                               
                             </Circle>
                             <OverText>
                                 <div>Vue2</div>
@@ -262,7 +231,6 @@ function Home(){
                         </OverItem>
                         <OverItem>
                             <Circle>
-                                {/* <Icon src="/public/Vue.svg" alt="vue2" /> */}
                                 <Icon src={IconsVue} alt="vue2" />
                             </Circle>
                             <OverText>
@@ -273,7 +241,6 @@ function Home(){
                         </OverItem>
                         <OverItem>
                             <Circle>
-                                {/* <Icon src="/public/React.svg" alt="vue2" /> */}
                                 <Icon src={IconsReact} alt="vue2" />
                             </Circle>
                             <OverText>
@@ -311,9 +278,6 @@ function Home(){
                         </TreeBox>
                     </Diagram>
                 </Main>
-                {/* <Bottom>
-                    <BottomItem></BottomItem>
-                </Bottom> */}
             </Wrapper>
             <PWrapper>
                 <h2>Home</h2>
