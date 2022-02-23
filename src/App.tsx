@@ -11,7 +11,10 @@ const Con=styled.div`
   padding:20px;
   background-image: linear-gradient(to top right, #CFD9E5, #D4DEEA);
   height:100%;
-`;
+  @media(max-height:700px){
+    height:700px;
+  }
+`
 
 function App() {
   return (
