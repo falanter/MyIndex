@@ -1,8 +1,10 @@
 import { Link, LinkProps, useMatch, useResolvedPath } from 'react-router-dom';
 import styled from 'styled-components'
-
+import perIcon from '../assets/icon.jpg'
 const NavWrapper=styled.nav`
   /* border: 1px solid blue; */
+  display:flex;
+  flex-direction: column;
   z-index:5;
   padding-top:20px;
   box-shadow: 20px 0 50px rgba(0,0,0,0.25);
@@ -34,31 +36,73 @@ const NavWrapper=styled.nav`
     }
   }
 `;
+const PerWrapper=styled.nav`
+  height:250px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  text-align:center;
+  img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+  }
+  h1{
+    height:25px;
+    color:#555;
+    width:200px;
+    font-size:20px;
+    margin-top:5px;
+    margin-bottom:0;
+  }
+  h2{
+    font-size:16px;
+    color:#838282;
+    height:20px;
+  }
+  div{
+    color:#fff;
+    font-size:14px;
+    margin:10px 0 20px 0;
+    width:150px;
+    height:30px;
+    background:#6ba9f5;
+    border-radius:10px;
+    line-height:30px;
+  }
+`
 const Nav = () => {
     return (
         <NavWrapper>
-            <ul>
-                <li>
-                    <CustomLink to="/home">
-                        home
-                    </CustomLink>
-                </li>
-                <li>
-                    <CustomLink to="/about">
-                        about
-                    </CustomLink>
-                </li>
-                {/* <li>
-                    <CustomLink to="/user">
-                        user
-                    </CustomLink>
-                </li> */}
-                <li>
-                    <CustomLink to="/project">
-                        project
-                    </CustomLink>
-                </li>
-            </ul>
+          <ul>
+              <li>
+                  <CustomLink to="/home">
+                      home
+                  </CustomLink>
+              </li>
+              <li>
+                  <CustomLink to="/about">
+                      about
+                  </CustomLink>
+              </li>
+              {/* <li>
+                  <CustomLink to="/user">
+                      user
+                  </CustomLink>
+              </li> */}
+              <li>
+                  <CustomLink to="/project">
+                      project
+                  </CustomLink>
+              </li>
+          </ul>
+          <PerWrapper>
+            <img src={perIcon} alt="icon" />
+            <h1>falanter</h1>
+            <h2>falanter's</h2>
+            <h2>project</h2>
+            <div>Go to my github</div>
+          </PerWrapper>
         </NavWrapper>
     )
 }
